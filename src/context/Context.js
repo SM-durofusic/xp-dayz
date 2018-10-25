@@ -27,6 +27,7 @@ class MyProvider extends React.Component {
                   edges {
                     node {
                       label
+                      id
                     }
                   }
                 }
