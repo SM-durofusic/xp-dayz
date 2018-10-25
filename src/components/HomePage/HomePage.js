@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PageContainer from '../PageContainer'
+import { MyContext } from "../../context";
 import Menu from '../Menu'
 import BlogPostFeed from '../BlogPostFeed'
 import HomeBlogPost from '../HomeBlogPost'
