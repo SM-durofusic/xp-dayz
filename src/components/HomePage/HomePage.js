@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { MyContext } from "../../context";
-
-import React, { Component } from "react";
 import PageContainer from "../PageContainer";
 import Menu from "../Menu";
 export default class HomePage extends Component {
