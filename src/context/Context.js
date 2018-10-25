@@ -40,9 +40,11 @@ class MyProvider extends React.Component {
                 id
                 author {
                   id
+                  name
                 }
                 excerpt
                 content
+                title
               }
             }
           }

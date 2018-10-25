@@ -1,16 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { css } from 'glamor';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { css } from "glamor";
 
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import App from "./App";
+import "./assets/fonts.css";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
@@ -18,6 +19,6 @@ ReactDOM.render(
 // Learn more about service workers: http://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-css.global('html, body', {
-  backgroundColor: '#eee',
+css.global("html, body", {
+  backgroundColor: "#eee"
 });

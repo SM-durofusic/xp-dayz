@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { css } from 'glamor';
+import React, { Component } from "react";
+import { css } from "glamor";
 
 export default class PageContainer extends Component {
   render() {
@@ -8,6 +8,9 @@ export default class PageContainer extends Component {
 }
 
 const PageContainerStyle = css({
-  maxWidth: '80%',
-  margin: '0 auto',
+  maxWidth: "50%",
+  margin: "0 auto",
+  "@media screen and (max-width: 768px)": {
+    maxWidth: "100%"
+  }
 });
