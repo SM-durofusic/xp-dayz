@@ -4,6 +4,7 @@ const navBarStyle = css({
     listStyleType: 'none',
     margin: 0,
     padding: 0,
+    borderRadius: 5,
     overflow: 'hidden',
     backgroundColor: '#333',
     '& li': {
