@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-
+import React, {Component} from 'react';
+import PageContainer from '../PageContainer'
+import Menu from '../Menu'
 export default class HomePage extends Component {
   render() {
     return (
       <div>
-        <h1>HomePage</h1>
+        <PageContainer>
+          <h1>BlogName</h1>
+          <Menu/>
+        </PageContainer>
       </div>
     );
   }
