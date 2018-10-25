@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import ApolloClient from 'apollo-boost';
 import { Route } from 'react-router-dom';
 
+import HomePage from './components/HomePage';
+import SinglePage from './components/SinglePage';
+
 const WP_GRAPHQL_ENDPOINT = 'www.develop.durofusic.biz.hr/xp-dayz/graphql';
 
 const client = new ApolloClient({
@@ -16,7 +19,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <p>lorem ipsum</p>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/:id" exact component={SinglePage} />
       </div>
     );
   }
