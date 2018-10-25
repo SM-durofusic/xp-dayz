@@ -31,3 +31,5 @@ export default class Menu extends Component {
     );
   }
 }
+
+export default Menu;
