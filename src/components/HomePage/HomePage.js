@@ -10,16 +10,12 @@ export default class HomePage extends Component {
     return (
       <div>
         <PageContainer>
-          <h1>Searchmetrics XP Day</h1>
-          <Menu />
           <BlogPostFeed>
             <MyContext.Consumer>
               {// get posts and map through them
               posts => {
                 const postFeed = posts.state.posts.map(post => {
-                  console.log(post);
                   const regex = /(<([^>]+)>)/gi;
-
                   return (
                     <HomeBlogPost
                       title={post.node.title}

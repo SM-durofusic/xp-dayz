@@ -11,7 +11,6 @@ export default class HomeBlogPost extends React.PureComponent {
     this.setState({
       isExpanded: !this.state.isExpanded
     });
-    console.log(this.state);
   }
   render() {
     return (
